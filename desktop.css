@@ -1,0 +1,17 @@
+@media (min-width: 1024px) {
+    header {
+        height: 49rem;
+    }
+.nav {
+    padding: 56px 80px 0;
+}
+.hero {
+    padding: 56px 500px;
+}
+.hero-img {
+    padding: 0 44px;
+    width: 602px;
+    min-width: 767px;
+    max-width: 60vw;
+}
+}

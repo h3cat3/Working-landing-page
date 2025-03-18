@@ -1,0 +1,114 @@
+:root {
+    --Green: #44FFA1;
+    --Purple900: #24053E;
+    --purple500: #584D62;
+    --Purple100: #FCF8FF;
+    --White: #FFFFFF;
+}
+@font-face {
+    font-family: 'Fraunces';
+    src: url('./assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf') format('Fraunces-Variable'),
+    url('assets/fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf' format('Fraunces_144pt-SemiBold'));
+    }
+ @font-face {
+    font-family: 'Manrope';
+    src: url('./assets/fonts/manrope/Manrope-VariableFont_wght.ttf') format('Manrope-Variable');
+}
+
+/*preset clases*/
+.text1 {
+    font-family: "Fraunces";
+    font-size: 5em;
+    line-height: 100%;
+    letter-spacing: 0;
+    
+    
+}
+.text2{
+    font-family: "Fraunces";
+    font-size: 3.5em;
+    line-height: 120%;
+    letter-spacing: 0;
+    font-weight:bold;
+}
+.text3{
+    font-family: "Fraunces";
+    font-size: 2rem;
+    line-height: 120%;
+    letter-spacing: 0;
+    font-weight:bold;
+}
+.text4 {
+    font-family: 'Manrop';
+    font-size: 1.125rem;
+    line-height: 180%;
+    letter-spacing: 0;
+    font-weight:normal;
+}
+.text5 {
+    font-family: 'Manrop';
+    font-size: 1.125rem;
+    line-height: 150%;
+    letter-spacing: 0;
+    font-weight:bold;
+}
+.underline {
+    text-decoration: underline; 
+    text-decoration-color: var(--Green);
+}
+
+/*hover, active, focus states*/
+
+a:hover, a:focus, a:active {
+    color: var(--Green);
+}
+
+
+        header {
+            
+            background: linear-gradient(to bottom, var(--Purple900) 80%, var(--Purple100) 80%);
+            position: relative;
+            height: 35rem; 
+            z-index: 1;
+            color: var(--White)
+          
+        }
+        header::after {
+            content: '';
+            position: absolute;
+          
+            bottom: 5rem;
+            left: 50%;
+            width: 100vw; /* adjust size of the semicircle */
+            height: 6.5rem; /* adjust size of the semicircle */
+            background: var(--Purple900); /* color of the semicircle */
+            clip-path: ellipse(70% 50%);
+            transform: translateX(-50%);
+            z-index: -2;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 32px 20px 0;
+        }
+        .hero {
+            display: flex;
+           flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 56px 20px;
+            text-align: center;
+            gap: 40px;
+        }
+        button {
+            background-color: var(--Green);
+            border: var(--Green);
+            color: var(--Purple900);
+            padding: 0.75rem 2rem;
+        }
+        .hero-img {
+            padding: 0 20px;
+min-width: 320px;
+            max-width: 60vw;
+            margin: 0 auto;
+        }
