@@ -1,10 +1,8 @@
 @media (min-width: 768px) {
 
     header {
-            
-        background: url(images/bg-pattern-1.svg) -200px 40px no-repeat, url(images/bg-pattern-2.svg) 90vw 450px no-repeat, linear-gradient(to bottom, var(--Purple900) 80%, var(--Purple100) 80%);
+        background: url(images/bg-pattern-1.svg) left -200px top 40px no-repeat, url(images/bg-pattern-2.svg) right -100px top 300px no-repeat, linear-gradient(to bottom, var(--Purple900) 80%, var(--Purple100) 80%);
         position: relative;
-        height: 58.25rem; 
         z-index: 1;
     }
     .nav {
@@ -18,5 +16,32 @@
         width: 602px;
         min-width: 602px;
         max-width: 60vw;
+    }
+    header::after{
+        bottom: 120px;
+        height: 80px;
+    }
+    .about {
+        padding: 112px 44px 0;
+        display: flex;
+      }
+    .about-img{
+        margin: 0;
+    }
+    .about-text{
+        margin-top: 168px;
+        margin-left: -100px;
+        
+    }
+    .about-text::after{
+        content: "";
+        background: url(images/bg-pattern-3.svg);
+        background-size: 150px 150px;
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        bottom: -70px;
+        right: 10px;
+        z-index: 3;
     }
 }
